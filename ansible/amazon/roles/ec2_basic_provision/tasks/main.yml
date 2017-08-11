@@ -30,7 +30,7 @@
     host: "{{ item.public_dns_name }}"
     port: 22
     delay: 60
-    timeout: 420
+    timeout: 320
     state: started
   with_items: "{{ vms.instances }}"  
   when: assign_public_ip
